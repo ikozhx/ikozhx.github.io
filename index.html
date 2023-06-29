@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Venta de cuentas Dark Orbit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #832a2a;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 0 0 20px 0;
+        }
+
+        .account-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .account {
+            width: 228px;
+            height: 228px;
+            border: 1px solid #dddddd;
+            border-radius: 4px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .account-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+    <script>
+        // Función para abrir la página de detalles de la cuenta
+        function openAccountDetails(accountId) {
+            window.open('detalles_cuenta.html?id=' + accountId, '_blank');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Se vende perrito marikongt</h1>
+        <h2>perrito full bundle duerme y esta epico, click en la imagen para mas info</h2>
+        <div class="account-list">
+            <div class="account" onclick="openAccountDetails(1)">
+                <img class="account-image" src="imagenes\kenchisito.JPEG" alt="Cuenta 1">
+            </div>
+            <div class="account" onclick="openAccountDetails(2)">
+                <img class="account-image" src="imagenes\kenshisito2.JPEG" alt="Cuenta 2">
+            </div>
+            <!-- Agrega más cuentas aquí -->
+        </div>
+    </div>
+</body>
+</html>
